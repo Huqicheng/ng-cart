@@ -1,0 +1,6 @@
+<!-- NG-ZORRO -->
+<div style="padding:20px">
+  <ng-cart [listOfData]="_data"></ng-cart>
+  <ng-summary [total]="this.cartService.total"></ng-summary>
+  <button nz-button nzType="primary" [nzSize]="size" (click)="loadOne()" [nzLoading]="isLoadingOne">Place Order</button>
+</div>
